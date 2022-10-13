@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Care My Drive (Admin)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logOut">Log Out</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_services">Services</string>
+    <!--    <string name="menu_indiSer">Individual Services</string>-->
+    <!--    <string name="menu_combSer">Combined Services</string>-->
+    <string name="menu_clients">Clients</string>
+    <string name="menu_workshops">Workshops</string>
+    <string name="menu_vehicles">Vehicles</string>
+    <!--    <string name="menu_initBookings">Requested Bookings</string>-->
+    <!--    <string name="menu_liveBookings">Accepted Bookings</string>-->
+    <string name="menu_bookings">Bookings</string>
+    <string name="menu_rejBookings">Rejected Bookings</string>
+    <string name="title_activity_individual_services">Individual Services</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_edit_individual_service">Edit Individual Service</string>
+
+    <string name="large_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="title_activity_list_clients">Clients List</string>
+    <string name="title_activity_list_workshops">Workshops List</string>
+    <string name="title_activity_details_client">Client Detail</string>
+    <string name="title_activity_cars_client">Clients Vehicles</string>
+    <string name="title_activity_details_car">Car Details</string>
+    <string name="title_activity_details_workshop">Workshop Details</string>
+    <string name="title_activity_services_workshop">Workshop Services</string>
+    <string name="title_activity_details_workshop_service">Workshop Service Details</string>
+    <string name="title_activity_init_services">Requested Bookings</string>
+    <string name="title_activity_live_services">Accepted Bookings</string>
+    <string name="title_activity_comp_services">Completed Services</string>
+    <string name="title_activity_details_booking">Booking Details</string>
+    <string name="title_activity_list_bookings">Bookings</string>
+
+    <string name="admin_PhoneNo">+919995533668</string>
+    <string name="admin_uid">Q1duhdWJlHSzON4p29g36VdpqtA3</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_list_cars">Vehicles List</string>
+    <string name="title_activity_rej_services">Rejected Services</string>
+    <string name="title_activity_choose_workshop">Choose Workshop</string>
+    <string name="title_activity_show_workshop_images">Workshop Photos</string>
+    <!--    TODO : over-->
+
+</resources>

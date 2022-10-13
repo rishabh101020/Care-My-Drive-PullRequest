@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center|center_horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Dlg_add_remark_TIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rejection Reason"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Dlg_add_remark_TIET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <View-->
+<!--        android:id="@+id/Dlg_add_remark_V"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1sp"-->
+<!--        android:background="#79D6D1D1"-->
+<!--        android:layout_below="@id/Dlg_add_remark_TIL"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/Dlg_add_remark_LL"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/Dlg_add_remark_V"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/Dlg_add_remark_Reject"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:text="Cancel"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/Dlg_add_remark_Accept"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:text="Send"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--    </LinearLayout>-->
+
+</RelativeLayout>

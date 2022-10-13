@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.bookings.BookingsFragment"
+    android:orientation="vertical">
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/home_TV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="My Bookings"-->
+<!--        android:textSize="24sp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginLeft="12dp"-->
+<!--        android:layout_marginRight="12dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+
+<!--        />-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/bookings_TL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabIndicatorGravity="stretch"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicator="@drawable/tab_indicator"
+        android:paddingBottom="8dp"
+        android:paddingTop="4dp"/>
+
+
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/bookings_VP2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Care My Drive</string>
+    <string name="action_logOut">Log Out</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_cars">My Vehicles</string>
+    <string name="title_bookings">My Bookings</string>
+    <string name="title_activity_cars_details">Car Details</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_services_cars">Car Service</string>
+    <string name="title_activity_choose_workshop">Choose Workshop</string>
+    <string name="title_activity_choose_car">Choose Car</string>
+    <string name="title_activity_choose_service">Choose Service</string>
+    <string name="title_activity_details_service">DetailsService</string>
+
+
+    <string name="large_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="title_activity_details_booking">DetailsBooking</string>
+    <string name="title_activity_confirm_booking">Confirm Booking</string>
+
+
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+    <string name="admin_PhoneNo">+919995533668</string>
+    <string name="admin_Email">vedhaautomotivesolutions@gmail.com</string>
+
+    <string name="title_activity_edit_det_car">EditDetCar</string>
+    <string name="title_activity_choose_location">Map</string>
+    <string name="title_activity_choose_remaining_workshop">Choose Workshop</string>
+    <string name="title_activity_show_workshop_images">Workshop Photos</string>
+
+</resources>

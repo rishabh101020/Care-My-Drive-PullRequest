@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.cars.CarsFragment">
+
+<!--    android:background="@color/white"-->
+
+
+
+
+    <!--    <com.google.android.material.tabs.TabLayout-->
+    <!--        android:id="@+id/cars_TL"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:tabMode="fixed"-->
+    <!--        app:tabIndicatorGravity="stretch"-->
+    <!--        app:tabSelectedTextColor="@color/white"-->
+    <!--        app:tabIndicatorAnimationMode="elastic"-->
+    <!--        app:tabIndicator="@drawable/tab_indicator"-->
+    <!--        android:paddingBottom="8dp"-->
+    <!--        android:paddingTop="4dp"/>-->
+
+    <!--    <androidx.viewpager2.widget.ViewPager2-->
+    <!--        android:id="@+id/cars_VP2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+
+    <!--        />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/Cars_HSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/Cars_TV_All"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtvew_indicator_selected"
+                    android:text="ALL"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Cars_TV_Bikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtvew_indicator_unselected"
+                    android:text="BIKES"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Cars_TV_Cars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtvew_indicator_unselected"
+                    android:text="CARS"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Cars_TV_Heavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtvew_indicator_unselected"
+                    android:text="HEAVY"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Cars_TV_Others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtvew_indicator_unselected"
+                    android:text="OTHERS"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/Cars_V"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#79D6D1D1"
+            android:layout_below="@id/Cars_HSV"/>
+
+        <LinearLayout
+            android:id="@+id/RV_Cars_Placeholder_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/Cars_V"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/RV_Cars_Placeholder_IV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight= "16dp"
+                android:src="@drawable/no_cars"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/RV_Cars_Placeholder_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight= "8dp"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RV_Cars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/Cars_V">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cars_CV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/green_100"
+        app:cardCornerRadius="8dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cars_CV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Cars_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_edit_list_24"
+        android:visibility="gone" />
+
+</FrameLayout>

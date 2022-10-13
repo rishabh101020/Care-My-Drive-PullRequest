@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/green_100">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="8dp"
+        android:padding="4dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        >
+
+        <ImageView
+            android:id="@+id/GV_home_services_IV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cars_repair_48_green"
+            />
+
+        <TextView
+            android:id="@+id/GV_home_services_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+
+             />
+    </LinearLayout>
+
+<!--    android:maxLines="2"-->
+<!--    android:ellipsize="end"-->
+<!--    for moving text in text view add to attributes of TextView  + txtView.setSelected(true) in java-->
+<!--    android:ellipsize="marquee"-->
+<!--    android:marqueeRepeatLimit="marquee_forever"-->
+<!--    android:scrollHorizontally="true"-->
+<!--    android:singleLine="true"-->
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_margin="@dimen/activity_horizontal_margin"-->
+<!--    app:cardCornerRadius="10dp"-->
+<!--    android:elevation="10dp">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/activity_horizontal_margin"-->
+<!--        android:background="@drawable/custom_button_blue"-->
+<!--        android:elevation="10dp">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cardViewInPastA"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_margin="8dp"-->
+
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/cardViewIn_VenuePastA"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/ic_auditors_100dp" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/InRecVewLL1PastA"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:layout_toRightOf="@id/cardViewInPastA">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/InRecVewLL1_venueNamePastA"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Client Name"-->
+<!--                android:textColor="#262626"-->
+<!--                android:textSize="16sp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/InRecVewLL1_venueTypePastA"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/InRecVewLL1_venueNamePastA"-->
+<!--                android:text="( Venue Type )" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/InRecVewLL1_auditedByPastA"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/InRecVewLL1_venueTypePastA"-->
+<!--                android:text="( Audited By )" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/InRecVewLL1_ratingPastA"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/InRecVewLL1_auditedByPastA"-->
+<!--                android:text="( Rating )" />-->
+
+<!--        </RelativeLayout>-->
+
+
+
+<!--    </RelativeLayout>-->
+
+<!--</androidx.cardview.widget.CardView>-->

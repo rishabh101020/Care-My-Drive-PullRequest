@@ -1,0 +1,121 @@
+{
+  "project_info": {
+    "project_number": "832504045324",
+    "project_id": "caremydrive",
+    "storage_bucket": "caremydrive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832504045324:android:4ffbf5f2da8bdf679df329",
+        "android_client_info": {
+          "package_name": "com.cmdrj.caremydrive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832504045324-cmjqa3l7q202u18k0vsn1vo7e1nm4js4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cmdrj.caremydrive",
+            "certificate_hash": "306b666449626d8900994bb5cf2b6f4da6ce0111"
+          }
+        },
+        {
+          "client_id": "832504045324-as6h029ekm2o9r0kaieent9rnjtekk69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGtIKZ5cIx36f0-KotyQR8u9hLhaxLl0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832504045324-as6h029ekm2o9r0kaieent9rnjtekk69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832504045324:android:f71ea720cb3628d69df329",
+        "android_client_info": {
+          "package_name": "com.cmdrj.caremydriveadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832504045324-pv7d0iijdofeuks7vmf3anmofma2bbe7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cmdrj.caremydriveadmin",
+            "certificate_hash": "306b666449626d8900994bb5cf2b6f4da6ce0111"
+          }
+        },
+        {
+          "client_id": "832504045324-as6h029ekm2o9r0kaieent9rnjtekk69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGtIKZ5cIx36f0-KotyQR8u9hLhaxLl0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832504045324-as6h029ekm2o9r0kaieent9rnjtekk69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832504045324:android:8585f1a3fb13f4799df329",
+        "android_client_info": {
+          "package_name": "com.cmdrj.caremydriveworkshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832504045324-gv5kfplpok44ur2ch7sr3lq2tem44f92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cmdrj.caremydriveworkshop",
+            "certificate_hash": "306b666449626d8900994bb5cf2b6f4da6ce0111"
+          }
+        },
+        {
+          "client_id": "832504045324-as6h029ekm2o9r0kaieent9rnjtekk69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGtIKZ5cIx36f0-KotyQR8u9hLhaxLl0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832504045324-as6h029ekm2o9r0kaieent9rnjtekk69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

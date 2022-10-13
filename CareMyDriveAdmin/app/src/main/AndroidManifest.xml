@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cmdrj.caremydriveadmin">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CareMyDriveAdmin">
+        <activity
+            android:name=".ShowWorkshopImages"
+            android:label="@string/title_activity_show_workshop_images"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar"></activity>
+        <activity android:name=".ViewImage" />
+        <activity
+            android:name=".ChooseWorkshop"
+            android:label="@string/title_activity_choose_workshop"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".RejServices"
+            android:label="@string/title_activity_rej_services"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".ListCars"
+            android:label="@string/title_activity_list_cars"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:exported="true"
+            android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListBookings"
+            android:label="@string/title_activity_list_bookings"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".DetailsBooking"
+            android:label="@string/title_activity_details_booking"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".CompServices"
+            android:label="@string/title_activity_comp_services"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".LiveServices"
+            android:label="@string/title_activity_live_services"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".InitServices"
+            android:label="@string/title_activity_init_services"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".DetailsWorkshopService"
+            android:label="@string/title_activity_details_workshop_service"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".ServicesWorkshop"
+            android:label="@string/title_activity_services_workshop"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".DetailsWorkshop"
+            android:label="@string/title_activity_details_workshop"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".DetailsCar"
+            android:label="@string/title_activity_details_car"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".CarsClient"
+            android:label="@string/title_activity_cars_client"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".DetailsClient"
+            android:label="@string/title_activity_details_client"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".ListWorkshops"
+            android:label="@string/title_activity_list_workshops"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".ListClients"
+            android:label="@string/title_activity_list_clients"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".EditIndividualService"
+            android:label="@string/title_activity_edit_individual_service"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".IndividualServices"
+            android:label="@string/title_activity_individual_services"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CareMyDriveAdmin.NoActionBar" />
+    </application>
+
+</manifest>

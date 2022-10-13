@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/DetBooking_RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/DetBooking_LL"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:cardBackgroundColor="@color/green_100"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/DetBooking_CarModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:text="Car Model, Manufacturer"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"/>
+
+                    <TextView
+                        android:id="@+id/DetBooking_ServicePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:drawableLeft="@drawable/ic_rupee_16sp"
+                        android:text="XXXX.X"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:id="@+id/DetBooking_NextDate_V"
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1"
+                                android:visibility="gone"/>
+
+                            <LinearLayout
+                                android:id="@+id/DetBooking_NextDate_LL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_NextDate_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_est_time_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_NextDate_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Next Scheduled Date"
+                                    android:textSize="12sp"/>
+
+                                <TextView
+                                    android:id="@+id/DetBooking_NextDate_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="XX-XX-XXXX"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/DetBooking_NextKM_V"
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/DetBooking_NextKM_LL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_NextKM_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_est_time_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_NextKM_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Next Scheduled KM"
+                                    android:textSize="12sp"/>
+
+                                <TextView
+                                    android:id="@+id/DetBooking_NextKM_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="X Km"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/DetBooking_CommissionablePrice_V"
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1"
+                                android:visibility="gone"/>
+
+                            <LinearLayout
+                                android:id="@+id/DetBooking_CommissionablePrice_LL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_CommissionablePrice_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_rupee_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_CommissionablePrice_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Commissionable Price"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_CommissionablePrice_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="XXXX.X"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/DetBooking_Commission_V"
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1"
+                                android:visibility="gone"/>
+
+                            <LinearLayout
+                                android:id="@+id/DetBooking_Commission_LL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_Commission_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_rupee_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Commission_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Commission"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Commission_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="XXXX.X"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_Client_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_person_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Client_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Customer Name"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Client_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Customer Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_MbNo_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_phone_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_MbNo_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Mobile No"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_MbNo_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="9876543210"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_Address_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_location_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Address_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Address"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Address_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Address"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_CarNo_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_registration_number_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_CarNo_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Car Number"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_CarNo_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="XX 00 XX 0000"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_Fuel_Type_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_fuel_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Fuel_Type_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Fuel Type"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Fuel_Type_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Fuel Type"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_ServiceName_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_cars_repair_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_ServiceName_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Service Name"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_ServiceName_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Service Name"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_ServiceDate_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_reschedule_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_ServiceDate_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Service Date"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_ServiceDate_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="XX-XX-XXXX"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/DetBooking_Rating_View"
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/DetBooking_Rating_LL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_Rating_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_rating_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Rating_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Rating"
+                                    android:textSize="12sp" />
+
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Rating_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_star_full_12_orange"
+                                    android:text="X"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_PickUp_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_pick_up_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_PickUp_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="PickUp Facility"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_PickUp_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Chosen/Not Chosen"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/DetBooking_Details_IV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_details_24_green" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Details_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Details"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/DetBooking_Details_TV_Det"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/large_text"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="#79D6D1D1" />
+
+                        </LinearLayout>
+
+
+                    </ScrollView>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/DetBooking_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:src="@drawable/ic_bookings_70_green" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/DetBooking_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/DetBooking_IV"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_invoice_24"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/DetBooking_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/DetBooking_Reject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Reject"/>
+
+
+        <Button
+            android:id="@+id/DetBooking_Accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Accept" />
+
+    </LinearLayout>
+
+</RelativeLayout>

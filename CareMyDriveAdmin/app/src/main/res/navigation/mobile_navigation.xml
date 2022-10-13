@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.cmdrj.caremydriveadmin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="com.cmdrj.caremydriveadmin.ui.services.ServicesFragment"
+        android:label="@string/menu_services"
+        tools:layout="@layout/fragment_services" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_indiSer"-->
+<!--        android:name="com.cmdrj.caremydriveadmin.FragmentIndividualServices"-->
+<!--        android:label="@string/menu_indiSer"-->
+<!--        tools:layout="@layout/fragment_individual_services" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_combSer"-->
+<!--        android:name="com.cmdrj.caremydriveadmin.FragmentCombinedServices"-->
+<!--        android:label="@string/menu_combSer"-->
+<!--        tools:layout="@layout/fragment_combined_services" />-->
+
+
+
+    <fragment
+        android:id="@+id/nav_clients"
+        android:name="com.cmdrj.caremydriveadmin.ui.entities.ClientsFragment"
+        android:label="@string/menu_clients"
+        tools:layout="@layout/fragment_clients" />
+
+    <fragment
+        android:id="@+id/nav_workshops"
+        android:name="com.cmdrj.caremydriveadmin.ui.entities.WorkshopsFragment"
+        android:label="@string/menu_workshops"
+        tools:layout="@layout/fragment_workshops" />
+
+    <fragment
+        android:id="@+id/nav_vehicles"
+        android:name="com.cmdrj.caremydriveadmin.ui.entities.CarsFragment"
+        android:label="@string/menu_vehicles"
+        tools:layout="@layout/fragment_cars" />
+
+
+    <fragment
+        android:id="@+id/nav_bookings"
+        android:name="com.cmdrj.caremydriveadmin.ui.bookings.BookingsFragment"
+        android:label="@string/menu_bookings"
+        tools:layout="@layout/fragment_bookings" />
+
+    <fragment
+        android:id="@+id/nav_rejBookings"
+        android:name="com.cmdrj.caremydriveadmin.ui.bookings.RejectedBookingsFragment"
+        android:label="@string/menu_rejBookings"
+        tools:layout="@layout/fragment_rejected_bookings" />
+
+</navigation>
